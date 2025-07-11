@@ -1,0 +1,16 @@
+.form-input {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+.form-input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+.star-icon::before {
+            content: '★';
+            color: gold;
+            font-size: 24px;
+            margin-right: 10px;
+        }
