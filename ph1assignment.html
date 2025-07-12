@@ -114,7 +114,61 @@
             width: 48%;
         }
         /* Update Feedback Section */
-        
+        .feedback-section {
+            padding: 50px 20px;
+            background-color: #eef2ff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .feedback-section h2 {
+            font-size: 36px;
+            color: #1e293b;
+            margin-bottom: 20px;
+        }
+        .feedback-section p {
+            color: #64748b;
+            margin-bottom: 40px;
+        }
+       .feedback-container {
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+           gap: 30px;
+           max-width: 1200px;
+           width: 100%;
+        }
+        .feedback-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .feedback-card img {
+           border-radius: 50%;
+           width: 80px;
+           height: 80px;
+           margin-bottom: 15px;
+        }
+        .feedback-card .stars {
+        color: #f59e0b;
+        font-size: 20px;
+        margin-bottom: 10px;
+        }
+       .feedback-card .reviewer {
+           font-size: 16px;
+           color: #1e293b;
+           margin-bottom: 10px;
+           font-weight: 500;
+        }
+        .feedback-card .feedback {
+           font-size: 14px;
+           color: #64748b;
+           line-height: 1.5;
+        }
         .footer {
            text-align: center;
            padding: 20px;
@@ -208,7 +262,30 @@
         </div>
     </section>
     <!-- Users' Feedback Section -->
-     
+     <section class="feedback-section">
+    <h2>Loved by Designers</h2>
+    <p>This template easily levelup our presence - Mir Work's</p>
+    <div class="feedback-container">
+        <div class="feedback-card">
+            <img src="Assets/avatar.png" alt="Reviewer 1">
+            <div class="stars">★★★★★</div>
+            <p class="reviewer">John Doe - July 2025</p>
+            <p class="feedback">Great design that boosted our brand visibility!</p>
+        </div>
+        <div class="feedback-card">
+            <img src="Assets/avatar.png" alt="Reviewer 2">
+            <div class="stars">★★★★☆</div>
+            <p class="reviewer">Jane Smith - July 2025</p>
+            <p class="feedback">Easy to customize and very professional.</p>
+        </div>
+        <div class="feedback-card">
+            <img src="Assets/avatar.png" alt="Reviewer 3">
+            <div class="stars">★★★★★</div>
+            <p class="reviewer">Alex Brown - July 2025</p>
+            <p class="feedback">Highly recommend for any creative project.</p>
+        </div>
+    </div>
+     </section>
     <!-- Footer Section -->
     <footer class="footer">
         <div class="logo">Mir's Work</div>

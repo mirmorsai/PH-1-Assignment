@@ -4,8 +4,301 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+<style>
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-image: url(./Assets/Hero-bg.png);
+            background-size: cover;
+            background-position: center;
+            color: #3b82f6; 
+        } 
+        
+        .navbar .logo {
+           font-size: 32px; 
+           font-weight: 700; 
+           color: #3b82f6;
+        }
+        .banner {
+            text-align: center;
+            padding: 50px 20px;
+            background-image: url(./Assets/Hero-bg.png);
+            background-size: cover;
+            background-position: center;
+            color: #1e293b; 
+        }
+        .banner h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .action-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 20px;
+            background-color: #eef2ff;
+        }
+        .action-left h2 {
+            font-size: 36px;
+            color: #1e293b;
+        }
+        .action-left p {
+            color: #64748b; 
+            font-style: italic; 
+            margin-bottom: 20px;
+        }
+        .action-right img {
+            border-radius: 12px; 
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background-color: #0056b3;
+        }
+        .productive-section {
+            background-color: #eef2ff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .productive-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .productive-item {
+            width: 30%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .productive-item h3 {
+             color: #3b82f6; /* Blue for data points */
+             font-size: 24px;
+        }
+        .productive-section h2 {
+            font-size: 36px;
+            color: #1e293b;
+            margin-bottom: 30px;
+        }
+        .productive-item p {
+             color: #64748b;
+        }
+        .contact-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 20px;
+            background-color: #eef2ff;
+        }
+        .contact-left, .contact-right {
+            width: 100%;
+        }
+        .contact-left h2 {
+             font-size: 48px;
+             color: #1e293b;
+        }
+        .contact-right form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 48%;
+        }
+        /* Update Feedback Section */
+        .feedback-section {
+            padding: 50px 20px;
+            background-color: #eef2ff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .feedback-section h2 {
+            font-size: 36px;
+            color: #1e293b;
+            margin-bottom: 20px;
+        }
+        .feedback-section p {
+            color: #64748b;
+            margin-bottom: 40px;
+        }
+       .feedback-container {
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+           gap: 30px;
+           max-width: 1200px;
+           width: 100%;
+        }
+        .feedback-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .feedback-card img {
+           border-radius: 50%;
+           width: 80px;
+           height: 80px;
+           margin-bottom: 15px;
+        }
+        .feedback-card .stars {
+        color: #f59e0b;
+        font-size: 20px;
+        margin-bottom: 10px;
+        }
+       .feedback-card .reviewer {
+           font-size: 16px;
+           color: #1e293b;
+           margin-bottom: 10px;
+           font-weight: 500;
+        }
+        .feedback-card .feedback {
+           font-size: 14px;
+           color: #64748b;
+           line-height: 1.5;
+        }
+        .footer {
+           text-align: center;
+           padding: 20px;
+           background-color: #eef2ff;
+           color: #1e293b;
+        }
+        .footer .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #3b82f6;
+        }
+        .footer-links a {
+            color: #3b82f6;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        body {
+           background-color: #eef2ff; 
+           color: #1e293b; 
+        }
+        * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: Arial, sans-serif;
+         }
+
+
+    </style>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="logo">Mir's Work</div>
+        <button class="btn">Sign Up</button>
+    </nav>
+    <!-- Banner Section -->
+    <section class="banner">
+        <h1>Everything was OK before comming Here..</h1>
+        <h1>For You.. Mir's Work</h1>
+        <button class="btn">Stay Focused</button>
+    </section>
+    <!-- Action Section -->
+    <section class="action-section">
+        <div class="action-left">
+            <h2>See it in action...</h2>
+            <p><i>explore the live preview and imagine your brand in this new look</i></p>
+            <button class="btn">Launch Live Preview</button>
+        </div>
+        <div class="action-right">
+            <img src="Assets/wc-mini.png" alt="Example Image">
+        </div>
+    </section>
+    <!-- Productive Users Section -->
+    <section class="productive-section">
+        <h2>Joined Thousands of Productive Users</h2>
+        <div class="productive-grid">
+            <div class="productive-item">
+                <h3>100K</h3>
+                <p>Active users</p>
+            </div>
+            <div class="productive-item">
+                <h3>300M</h3>
+                <p>Focus Sessions</p>
+            </div>
+            <div class="productive-item">
+                <h3>97.3%</h3>
+                <p>Satisfaction Rate</p>
+            </div>
+        </div>
+    </section>
+    <!-- Let's Get In Touch Section -->
+    <section class="contact-section">
+        <div class="contact-left">
+            <h2>Let's Get in Touch</h2>
+        </div>
+        <div class="contact-right">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-input" placeholder="Your Name">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-input" placeholder="Your Email">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-input" placeholder="Your Message"></textarea>
+                <button class="btn">Get in Touch</button>
+            </form>
+        </div>
+    </section>
+    <!-- Users' Feedback Section -->
+     <section class="feedback-section">
+    <h2>Loved by Designers</h2>
+    <p>This template easily levelup our presence - Mir Work's</p>
+    <div class="feedback-container">
+        <div class="feedback-card">
+            <img src="Assets/avatar.png" alt="Reviewer 1">
+            <div class="stars">★★★★★</div>
+            <p class="reviewer">John Doe - July 2025</p>
+            <p class="feedback">Great design that boosted our brand visibility!</p>
+        </div>
+        <div class="feedback-card">
+            <img src="Assets/avatar.png" alt="Reviewer 2">
+            <div class="stars">★★★★☆</div>
+            <p class="reviewer">Jane Smith - July 2025</p>
+            <p class="feedback">Easy to customize and very professional.</p>
+        </div>
+        <div class="feedback-card">
+            <img src="Assets/avatar.png" alt="Reviewer 3">
+            <div class="stars">★★★★★</div>
+            <p class="reviewer">Alex Brown - July 2025</p>
+            <p class="feedback">Highly recommend for any creative project.</p>
+        </div>
+    </div>
+     </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="logo">Mir's Work</div>
+        <p>Ready to elevate your online presence? <br>Contact us today to discuss
+your project and discover how we can bring your vision to life.</p>
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">How it works</a>
+            <a href="#">Services</a>
+        </div>
+    </footer>
+
+
 </body>
 </html>
